@@ -1,3 +1,13 @@
+:root {
+    --main: #405c70;
+    --bg: #b1a296;
+    --font_col: ;
+    --nav_col: #A0449B;
+    --nav_active_col: #664FB5;
+    --nav_hover_col: #FFFFFF;
+    --fonts: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
 body {
     background-image: url("img/moon_side.jpg");
     background-size: 100%;
@@ -16,6 +26,12 @@ header {
     height: 100px;
     text-align: center;
     padding-top: 15px;
+}
+
+header a,
+header a:visited {
+    text-decoration: none;
+    color: #FFFFFF
 }
 
 main {
@@ -50,8 +66,8 @@ nav a:visited {
 
 nav a:hover,
 .dropdown a:hover {
-    color: #A0449B;
-    background-color: #FFFFFF;
+    color: var(--nav_col);
+    background-color: var(--nav_hover_col);
 }
 
 div.dropdown {
@@ -59,14 +75,14 @@ div.dropdown {
 }
 
 .active {
-    background-color: green;
+    background-color: var(--nav_active_col);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    margin: 0px;
-    background-color: #A0449B;
+    margin: 10px 0px 0px 0px;
+    background-color: var(--nav_col);
     width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -81,8 +97,8 @@ div.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: #FFFFFF;
-    color: #A0449B;
+    background-color: var(--nav_hover_col);
+    color: var(--nav_col);
 }
 
 .dropdown:hover .dropdown-content {
@@ -99,7 +115,7 @@ h1 {
 }
 
 h2 {
-    color: #3399CC;
+    color: #D64142;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -132,7 +148,7 @@ footer {
 #wrapper {
     margin:auto;
     width: 80%;
-    background-color: #FFFFFF;
+    background-color: var(--bg);
     min-width: 960px;
     max-width: 2048px;
     box-shadow: 3px #333333;
