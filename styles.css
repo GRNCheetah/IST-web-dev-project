@@ -26,6 +26,7 @@ main {
     display: block;
 }
 
+/* Nav bar stylizations */
 nav {
     background-color: #A0449B;
     font-weight: bold;
@@ -35,8 +36,8 @@ nav {
 
 nav a {
     text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 16px;
+    text-align: center;
 }
 
 nav a:link {
@@ -47,11 +48,49 @@ nav a:visited {
     color: #FFFFFF;
 }
 
-nav a:hover {
+nav a:hover,
+.dropdown a:hover {
     color: #A0449B;
     background-color: #FFFFFF;
 }
 
+div.dropdown {
+    display: inline-block;
+}
+
+.active {
+    background-color: green;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin: 0px;
+    background-color: #A0449B;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFFFFF;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #FFFFFF;
+    color: #A0449B;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    overflow: visible;
+}
+
+/* other stuff */
 
 h1 {
     margin-bottom: 0;
