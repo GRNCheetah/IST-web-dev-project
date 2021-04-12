@@ -12,7 +12,7 @@ body {
     background-image: url("img/moon_side.jpg");
     background-size: 100%;
     background-repeat: repeat-y;
-    color: #666666;
+    color: #252525;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -106,6 +106,16 @@ div.dropdown {
     overflow: visible;
 }
 
+.center{
+    margin: auto;
+    text-align: center;
+}
+
+.fit{
+    max-width: 100%;
+    max-height: auto;
+}
+
 /* other stuff */
 
 h1 {
@@ -159,4 +169,9 @@ footer {
     min-width: 960px;
     max-width: 2048px;
     box-shadow: 3px #333333;
+}
+
+#titanPhoto{
+    display: block;
+    margin:auto;
 }
